@@ -15,10 +15,14 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.home.helpmarket.Constant;
 import com.home.helpmarket.R;
+
+import java.util.Random;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
@@ -28,6 +32,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final long MIN_TIME = 400;
     private static final float MIN_DISTANCE = 1000;
     private int mMan;
+    private int mDistance;
     private int mZoomLvl = 20;
 
     @Override
@@ -36,12 +41,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
         if (getIntent().getExtras() != null) {
             mMan = getIntent().getExtras().getInt(Constant.ARG_MAN);
-            int distance = getIntent().getExtras().getInt(Constant.ARG_DISTANCE);
-            if (distance < 5) {
+            mDistance = getIntent().getExtras().getInt(Constant.ARG_DISTANCE);
+            if (mDistance < 5) {
                 mZoomLvl = 20;
-            } else if (distance < 10) {
+            } else if (mDistance < 10) {
                 mZoomLvl = 18;
-            } else if (distance < 15) {
+            } else if (mDistance < 15) {
                 mZoomLvl = 16;
             } else {
                 mZoomLvl = 15;
@@ -109,7 +114,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, mZoomLvl); // Zoom lvl base on distance
         mMap.addMarker(new MarkerOptions().position(latLng).title("Your location"));
         mMap.animateCamera(cameraUpdate);
+        dummyMarkers(latLng);
         locationManager.removeUpdates(this);
+    }
+
+    private void dummyMarkers(LatLng latLng) {
+        Random ran = new Random();
+        int markerNo = ran.nextInt(mMan + 1);
+        for (int i = 0; i < markerNo; i++) {
+            mMap.addMarker(new MarkerOptions()
+                    .position(randomeLatLng(latLng))
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        }
+    }
+
+    private LatLng randomeLatLng(LatLng latLng) {
+        Random r = new Random();
+        return new LatLng(latLng.latitude + (-0.001d + 0.002d * r.nextDouble()), latLng.longitude + (-0.001d + 0.002d * r.nextDouble()));
     }
 
     @Override
