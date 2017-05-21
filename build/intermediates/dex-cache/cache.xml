@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\301f7cec9184e3879f1af19fefad9850c8a34886\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="aec5337725e7a3171f7f40a50d9837745693d429">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bbea7ce3650f4ae7f244504acac5ac1a028b969f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\b9339609e6373afae0e3ee294a94c00823b2fa5c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_15bf9574425bb4240ed7f08fb8da7cb31d09a7d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\278612cf4a698af3c6ba5d483641a4c72179359c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ec94bba6a9bbd3461d90830e0a0752a6487f5484">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_661ee00357be5d61475e611a3b5076babda71624\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\110f21b157047a4d164ade6595fa4bfe580612d8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d068a922134f5f9b9f98bfc609145e09af03c2a4">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_27c2d3753fa82161f4c0a72e5ab3af9ce1b4a5be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\6f8f0008e5f4a89a6f908bd5259fc5a4652232ec\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1172091167cff5873cbcccad4c0e08ec9e3240de">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_587887735f3e09b0e5859adf3b9735b1abeb5d0c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\2d03fc809ccc11a4113547f594201d9c9f6c366c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_99cf6a215d14b9f09319a1720b7fb8f74ec18193\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\d4b3524bd263fa1e3073b8e6408b9915f036025a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8a43729dd397e849f2a8bdc5d57a2f3170efb3ed">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cef333592ff90dff71ac3bfa2686fef42d571a69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\66ced7f35f6720f2b74b7e69ecc57ec6736889da\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da832806828ba407284c0c4b1d87b8f9ed9f2520">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_012b4efa1559d0cc95e57c6c5806050ba5ff9a9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\3f64c982c899d6360bdf7f4b783325dd52ea4012\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7979972576b6dbb1688052e42e5199abb54f81ba">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_03bdc90cd6d3a936431ed87473724d05cb376023\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\f7e699c25de48233a2dcfc8b51c61fc418492888\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e42f2f6dba9ce191901b6a31c0f03092aa0e4ee7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\84b7fe320df8005bdf2b945b305a305333d52e09\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="577aa74e06e6b4b407ff23ac75043685ae26dcbb">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_77d50f98af0817ff48ff2125eb269367835bd3e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\34ddf8f330009a6a07f7dfabca781c46464c3e8a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fc61b6bdc9ef367779c712ca79f4dbe3aa8f1d69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\29a3defe6484e0e8ca8277c282d9850bd64effd9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_887e3742ff75d5ecd332977bc59c2625153d4a9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\7de3fc5e1626d66c8a2866adc1d19ddf5b039e38\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="79100391e3b32d7323a04b7b8a9c8ad0adbae583">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_315ffd6bce8fcdc30ee38324e13f5fa55761643b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\7f5792f5b87776f5e977451af16bbbd77919ab20\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f3cb04060f3ffcf31d9d4bbbadcf9c2edc2abe4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\c7a2ac1bbe6c4d9c53e34fb0928eeeea66d31609\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8acedcfa4a75357fd63908028cac2f10315472f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\609d061bf4a2e02ed37d3db045f0a51c0fa84755\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7b3eaf755284fb08a6d616a55fbb07dc3917d5e7">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_21b2e76fd1545c8c1d06a63b84171c39ff3f45b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\700531926bc56e78945873cb023bf7348a806096\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_90730229be9ca8fe2569b101aadd14e91d786c74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\c82e97e4aa7becc5c80fc9d38662df9062ce2db5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_933a09a708a2d3c56f142303eb95e8843e82dacc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\929e8440987f730708b6c7f2f42dacb3e7102633\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d54a722583c1b99735f62d395806fa38bf5669ae">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ea605a0b85b16ff98e6f737e03445cbb62252f33\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\2edaaddeac79f6463f58d6775532c305888dda64\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_089a3a10cfa53028e15eabf39730e5493d87642a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\3485260da0617311e3c25625c737f8a8057690e9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f1968b9614bc6851e99db64e356cf60063503e5d">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3c94a67c3045cad4bcf83ac91ea361ecdfb53583\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\74d7a463c3de6458554485ab2b83982b4f5669f9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="553e58050e91d4295a2f1d1f80ea63b41ee5bc4b">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_232d916e94be92435329c64ee32481b519732d38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\bf896f67bd13c9e7bed221740b31b5db0cfb4551\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b34276d1fea450411cedd49d3146b04838f9dd6e">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a46fbe6f833fb8756f9e0e0a64c823903bd4549f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\da050ffc28add569d806b50137bb244b3553e881\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="740c4226d6bec1adaaf5fee4b9178674b695f75a">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28958d5220fabdd54bfd5d1463140fca1466a950\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\bed8d3c8710edeffe356999000c97698d1189a70\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_86dec1317a09eff5935f5ff5fae74e0f62f9345c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\a0dc3f7774e8c8b64d80e5c6f07c4d654248b856\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cea6fccbfe2b9ca7701a8766710179cd41ae1974">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33a168337ed015ce586d2e09c813353198bbecae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\11d43af7663ae45a7492d75bb73a64761d3c8ef0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4e5223997fa6032b326167ee4586ae0b3498647">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_821ca66078f14956615c9cb0dba270148a92709c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Program\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_eb6719ea3c5b4a6e5c8e40db2aeb4283e829f389\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\348d39ba3f32bfacc18e792206dd2b40f1d4954d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="de24d8023e8da79f30bee46b298f606e5e758432">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eb7ac4b75b56d37bc458fbc6d0434d70c8db00f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\70e4ba76126ed3c1ce80912a941bb54bc6400213\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9b775d7b643397da3ab57e62ae8abb74a9cc9a83">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_29a17ac5e2a7ce432ca0a85a2146ea7891140eb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\78a147886b5da14caf7bddb05d0ec54f7199d138\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_83413afb4fa7a918559b541996917f294814ce91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\556e12346f13e76c081c19267029d013d60b4e07\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cf5f630e354827a90ffe90ce2a330495108f0595">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_62e8936f121d87afff0b38024271f4d2ec2fe982\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\710ebaa64840357c501c036e15cea5bafad539ba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd057bc43f1c1e2f13566f5fe800d077b08b61b9">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ce6b2c6b52d6392a9225edef949e4795028af11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\6309e34a5c388f6ad26c1c64f38e39ee4cc69e84\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9ff5114aff3bfb387577ba92a11408dcf0441c24">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fbeb654c74fab24c4e4cf9a7ad42cdbef2bc0cbb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\498dc03f4c11afaf0a2577afe3abf257a12eb426\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ba589baa8fc87ae1393ca0ec3b85f8db4fbfa8d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\7c8b783205e81d842e2ad00599d9944a88c41c9b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2084d08f94b92b3a77486cc0b59584d8dae16963\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\b4655db5833355cc9548020c6f67db81eaba130f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dced699deadc1d08820d429b6ef98238a63cc3b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\6f1779998dc9c41f342503117f5cfa1afb4b34d9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2f2f16fde0c662116f735951b4e830afba373cc6">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0eb082c396fad3b5b90d7ca07a77574c0826f58f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\28f129ac0cb8a4b560d95b09cdabab4b7c25af39\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d54fc516c282a35c67b5a06f5722c9684893779\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\1bf94ef70e21a313002a30cd23c541eb196bb6f6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="84a9797d6c3dd732d00f0433edc17778573cea17">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c4c5503f2bf04dcbc9c7b56cec116c42c2cad899\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\b7f626088422030ae8e31adea23ebf9bd0187fa8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1b41f7538ea1af0aad76cb3253b87b13744788c2">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f6f3bd16003f1a9c3d765b62cf99b42e50fbbef5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\8413f168348563553c6ae63e24725f6562468a3e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ab2c6111c9e733c965725976ca2a2e57670000f9">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_df3bc2bbd717d0d54063a5b0c68780cfc168a060\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\8761e4f0d92d58b1c4779cb0038e7e6e4a7e516b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2cd95807d7f5c5d822da0e5ca4f48e99f36696d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\273e750616514990bd4c58c53562e6a1e59d7d20\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="29bd9a40adebb952fbe97515aac9db5dfbd90d93">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_93e223ae58ea89d4711fd774804f26fd63e89526\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\d99ae3595a326164f1f72cd3b557f18612ac5795\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="079c035b2a1820bf455e0ae7fd484dec575e2182">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_24fe7ccb7def3a969c9f1184c800d73c44aff98b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\12ba6abf050b5da75823c40ddec408d7bb424b92\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3dbaff65d26258306561d545f88d6712ac41dd46">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7a876c5c70f9f9c4ab833c09da5465038b25fcea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\9cc1f19ece6bc6f15b953398d1e53ed5cefc4607\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9024225796c3f11342ef6a4a99439f2f988bafb0">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_839bd588339a10912c2427d8d50452192f6521e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\81eb65d4d95599b60879ef50c0ff6c4e21085167\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c7e0d83e333a25f969bce43db78150c63e7aa0c">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e721fde61c4074d22f9b26cd7eb6977cba695e2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\dfce7c6d0a63adfe347d7835846cba102ad7bc78\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0d70d90970fca2e58caded29350e6a9cfd049e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\60e8bb3edabb05c71bb0b00ed54318f007dd28c9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0a534044236cf81b002604643d23e7ca56bd1ee0">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_44bd7ead8e615a870fcce3234ebef4dbd6acbee8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\6acbbb4ac43f0b50f6c0cbf83038aa05b9c4f4af\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f9aa417cd6d4373c413f6e60865133bcfdb7096b">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4222a169cf208115b7bb81a965ae67bd539b2d49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\3ebdec4c9c0fc2f3ac5de2eba994438817f0d6af\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="81978250f6de6ffdf2ea4632e7955613103e984c">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e0a62fc92f2b67bdbfa891618ae96ef051a55ad0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\fae1e01c9828fb01d8e49a7aff7334f1fb2fbeba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ba4defc8cb4ed5b90b8ef71602722cdeebe507cd">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_742bfb971c59fa8728af2df3a28c75a75a2e20ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\240abd25f38843f1766fe218393d312cf41a6711\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b0ef0ed72cb7adb2ecb818bdff12c36c7c45c83b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\176295e8a55443580361f534b037e13d7c4843c0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c4ba6d53176502b2672a5d7d25a0000d1a6e701c">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_41b04fe00528506758d5789f845ad08fce4680ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\a9529929ac133a1494028106b6c73adf5551525f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="60a8cdd1ad9b8d22a5d44bc8e479257ced2bf075">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_96fc8d994d1a9dc215c4a462aa6f8b7a5fc578f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\fc5af03312094212fe0fa6ca00cc3a4d7333a8ce\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="215363c803a119c16058c8bc0ccd0a4ee62e7157">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3335ccda01062ca4dc9e1800a00658ed80192ce9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\69e43a14b7e045e45155152b6d09df7e35e79e81\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a00607e7cf55392edd324bc8fa3827ded7e9859b">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8b9c512c0f68a4ebcf313d247c430c5e3dd052c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\4f87a6430595765a5ddfa8c98768a12b0e5cf341\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4d7184a651c5975b49928ce7c76175d491ee7a5e">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_47aed855c91f7d7ddceec6f73f0d6f74fa6edfa0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\ca52eabd30090aff1d969b7b1486d70cefea7158\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a25505a03f98db4cc2cf6b4a6be48e11763695bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\b31416b73c2f735856970a49230ee0113db7632f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5c1f80f62ccad560edcd6609fc75f385cf7cb45a">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b6af7024c0e1eb9629fbe108245e73cddfa0cac5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\dada9cef4d6348975028d9ea81e2895e524d68fc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cad5ae5774f39b7017a3ae3d103e7b78506397b0">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6289fc93ec48c9abf836d7f816deb6df868f0da7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\07f70b01c09417267613b9d6a5afc1dbdaf0fdc5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8f83a631abfdb790591a720e0cfb5f41329831c3">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9cef48a01cabe6590d6043210e506b337a783f2d\classes.dex" />
+    </item>
+
+</items>
