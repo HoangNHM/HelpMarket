@@ -24,6 +24,7 @@
         android:layout_height="50dp"
         android:background="@drawable/tieptuc"
         android:adjustViewBounds="true"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter"
+        android:onClick="onClickTiepTuc"/>
 
 </LinearLayout>

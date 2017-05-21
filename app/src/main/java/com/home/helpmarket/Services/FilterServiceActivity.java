@@ -1,17 +1,15 @@
 package com.home.helpmarket.Services;
 
 import android.net.Uri;
-import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 
 import com.home.helpmarket.R;
 import com.home.helpmarket.Services.dummy.DummyContent;
@@ -19,40 +17,23 @@ import com.home.helpmarket.Services.dummy.DummyContent;
 public class FilterServiceActivity extends AppCompatActivity implements SelectTypeFragment.OnListFragmentInteractionListener, SelectRangeFragment.OnFragmentInteractionListener {
 
     /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
+     * The {@link FrameLayout} that will host the section contents.
      */
-    private SectionsPagerAdapter mSectionsPagerAdapter;
+    private FrameLayout mFrameLayout;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
-    private ViewPager mViewPager;
+    private FragmentManager fm = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter_service);
 
-        // Hide the toolbar
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        mFrameLayout = (FrameLayout) findViewById(R.id.container);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
-
+        fm.beginTransaction()
+        .add(R.id.container, SelectTypeFragment.newInstance(0))
+        .commit();
     }
 
     /**
@@ -71,6 +52,22 @@ public class FilterServiceActivity extends AppCompatActivity implements SelectTy
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (fm.getBackStackEntryCount() > 0) {
+            fm.popBackStackImmediate();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    public void onClickTiepTuc(View view) {
+        fm.beginTransaction()
+        .replace(R.id.container, SelectRangeFragment.newInstance(null, null))
+        .addToBackStack(null)
+        .commit();
     }
 
     /**
