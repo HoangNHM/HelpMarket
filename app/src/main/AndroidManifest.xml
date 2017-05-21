@@ -30,7 +30,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".Maps.MapsActivity"
             android:label="@string/title_activity_maps">
 
             <!--
@@ -42,7 +42,7 @@
             -->
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".Login.LoginActivity"
             android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,7 +51,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PickService"
+            android:name=".Services.FilterServiceActivity"
             android:label="@string/title_activity_pick_service"
             android:theme="@style/AppTheme"></activity>
     </application>

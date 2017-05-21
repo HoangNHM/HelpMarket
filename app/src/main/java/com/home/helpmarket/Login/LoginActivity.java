@@ -1,4 +1,4 @@
-package com.home.helpmarket;
+package com.home.helpmarket.Login;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,7 +19,11 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.home.helpmarket.Services.FilterServiceActivity;
+import com.home.helpmarket.R;
 
 /**
  * A login screen that offers login via username/password.
@@ -65,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        Button mUserSignInButton = (Button) findViewById(R.id.user_sign_in_button);
+        ImageButton mUserSignInButton = (ImageButton) findViewById(R.id.user_sign_in_button);
         mUserSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -227,7 +231,7 @@ public class LoginActivity extends AppCompatActivity {
             if (success) {
                 //finish();
                 // TODO: move to pickup service
-                Intent intent = new Intent(LoginActivity.this, PickService.class);
+                Intent intent = new Intent(LoginActivity.this, FilterServiceActivity.class);
                 startActivity(intent);
                 finish(); // Prevent back to LoginActivity
             } else {
