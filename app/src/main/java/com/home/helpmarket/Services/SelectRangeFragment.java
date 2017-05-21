@@ -1,12 +1,13 @@
 package com.home.helpmarket.Services;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.home.helpmarket.R;
 
@@ -29,6 +30,9 @@ public class SelectRangeFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    TextView tvMan;
+    TextView tvDistance;
 
     public SelectRangeFragment() {
         // Required empty public constructor
@@ -65,15 +69,51 @@ public class SelectRangeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_select_range, container, false);
+        View view = inflater.inflate(R.layout.fragment_select_range, container, false);
+        tvMan = (TextView) view.findViewById(R.id.tvMan);
+        tvDistance = (TextView) view.findViewById(R.id.tvDistance);
+        SeekBar sbMan = (SeekBar) view.findViewById(R.id.sbMan);
+        SeekBar sbDistance = (SeekBar) view.findViewById(R.id.sbDistance);
+        sbMan.setOnSeekBarChangeListener(mMan);
+        sbDistance.setOnSeekBarChangeListener(mDistance);
+        return view;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+    private SeekBar.OnSeekBarChangeListener mMan = new SeekBar.OnSeekBarChangeListener() {
+        @Override
+        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            tvMan.setText(String.valueOf(progress));
+            mListener.onManInteraction(progress);
         }
-    }
+
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {
+
+        }
+
+        @Override
+        public void onStopTrackingTouch(SeekBar seekBar) {
+
+        }
+    };
+
+    private SeekBar.OnSeekBarChangeListener mDistance = new SeekBar.OnSeekBarChangeListener() {
+        @Override
+        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            tvDistance.setText(String.valueOf(progress));
+            mListener.onDistanceInteraction(progress);
+        }
+
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {
+
+        }
+
+        @Override
+        public void onStopTrackingTouch(SeekBar seekBar) {
+
+        }
+    };
 
     @Override
     public void onAttach(Context context) {
@@ -104,6 +144,7 @@ public class SelectRangeFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        void onManInteraction(int man);
+        void onDistanceInteraction(int distance);
     }
 }

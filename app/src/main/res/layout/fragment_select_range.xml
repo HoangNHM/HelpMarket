@@ -87,6 +87,7 @@
         android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         android:background="@drawable/timkiem"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        android:onClick="onCLickTimKiem"/>
 
 </LinearLayout>

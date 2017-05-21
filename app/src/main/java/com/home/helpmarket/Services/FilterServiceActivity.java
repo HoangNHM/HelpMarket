@@ -1,7 +1,6 @@
 package com.home.helpmarket.Services;
 
-import android.net.Uri;
-import android.support.v4.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.Fragment;
@@ -11,11 +10,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.home.helpmarket.Constant;
+import com.home.helpmarket.Maps.MapsActivity;
 import com.home.helpmarket.R;
 import com.home.helpmarket.Services.dummy.DummyContent;
 
 public class FilterServiceActivity extends AppCompatActivity implements SelectTypeFragment.OnListFragmentInteractionListener, SelectRangeFragment.OnFragmentInteractionListener {
 
+    private int mMan = 0;
+    private int mDistance = 0;
     /**
      * The {@link FrameLayout} that will host the section contents.
      */
@@ -46,12 +49,21 @@ public class FilterServiceActivity extends AppCompatActivity implements SelectTy
     }
 
     /**
-     * 2nd page call back
-     * @param uri
+     * 2nd page callback
+     * @param man service provider number
      */
     @Override
-    public void onFragmentInteraction(Uri uri) {
+    public void onManInteraction(int man) {
+        mMan = man;
+    }
 
+    /**
+     * 2nd page callback
+     * @param distance service provider distance
+     */
+    @Override
+    public void onDistanceInteraction(int distance) {
+        mDistance = distance;
     }
 
     @Override
@@ -68,6 +80,15 @@ public class FilterServiceActivity extends AppCompatActivity implements SelectTy
         .replace(R.id.container, SelectRangeFragment.newInstance(null, null))
         .addToBackStack(null)
         .commit();
+    }
+
+    public void onCLickTimKiem(View view) {
+        Intent intent = new Intent(FilterServiceActivity.this, MapsActivity.class);
+        Bundle args = new Bundle();
+        args.putInt(Constant.ARG_DISTANCE, mDistance);
+        args.putInt(Constant.ARG_MAN, mMan);
+        intent.putExtras(args);
+        startActivity(intent);
     }
 
     /**
