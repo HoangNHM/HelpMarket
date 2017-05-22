@@ -8,7 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -54,7 +54,13 @@
         <activity
             android:name=".Services.FilterServiceActivity"
             android:label="@string/title_activity_pick_service"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Enroll.EnrollActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_enroll"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ServiceDetail.ServiceDetailActivity"></activity>
     </application>
 
 </manifest>

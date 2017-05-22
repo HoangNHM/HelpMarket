@@ -138,6 +138,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vantuegia\.android\build-cache\64aeb5e33fba8e907ca8da9b55e5d22e324e518f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c9f315161321ea07c39bc78e15c13f67d7c3a359\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vantuegia\.android\build-cache\c7a2ac1bbe6c4d9c53e34fb0928eeeea66d31609\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -225,6 +234,15 @@
         revision="25.0.3"
         sha1="740c4226d6bec1adaaf5fee4b9178674b695f75a">
         <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28958d5220fabdd54bfd5d1463140fca1466a950\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Program\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="F:\Android\QuanHM\HelpMarket\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_b3d621f56b5e4ea9ed12a2825b14f8fc0c7f6c84\classes.dex" />
     </item>
     <item
         is-multidex="true"

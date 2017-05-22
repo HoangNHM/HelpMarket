@@ -9,8 +9,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.home.helpmarket.Constant;
+import com.home.helpmarket.Enroll.EnrollActivity;
 import com.home.helpmarket.Maps.MapsActivity;
 import com.home.helpmarket.R;
 import com.home.helpmarket.Services.dummy.DummyContent;
@@ -83,6 +85,13 @@ public class FilterServiceActivity extends AppCompatActivity implements SelectTy
     }
 
     public void onCLickTimKiem(View view) {
+        // Hard code
+        if (mMan == 0) {
+            mMan = 10;
+            return;
+        } else if (mDistance == 0) {
+            mDistance = 2;
+        }
         Intent intent = new Intent(FilterServiceActivity.this, MapsActivity.class);
         Bundle args = new Bundle();
         args.putInt(Constant.ARG_DISTANCE, mDistance);

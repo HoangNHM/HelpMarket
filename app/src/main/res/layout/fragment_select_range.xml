@@ -3,26 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="100dp"
+    android:paddingTop="80dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     tools:context="com.home.helpmarket.Services.SelectRangeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/imgMan"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/man" />
+            android:background="@drawable/man"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/tvMan"
@@ -44,9 +48,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="115dp"
         android:orientation="horizontal"
-        android:paddingTop="10dp">
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/imgDistance"
@@ -59,7 +63,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/tvDistance"

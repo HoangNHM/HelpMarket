@@ -2,6 +2,7 @@ package com.home.helpmarket.Maps;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -21,6 +22,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.home.helpmarket.Constant;
 import com.home.helpmarket.R;
+import com.home.helpmarket.ServiceDetail.ServiceDetailActivity;
 
 import java.util.Random;
 
@@ -101,6 +103,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                startActivity(new Intent(MapsActivity.this, ServiceDetailActivity.class));
+                return true;
+            }
+        });
 
         // Add a marker in Sydney and move the camera
         /*LatLng sydney = new LatLng(-34, 151);
