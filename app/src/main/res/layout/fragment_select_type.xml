@@ -6,17 +6,42 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:paddingTop="20dp"
     tools:context="com.home.helpmarket.Services.SelectTypeFragment">
+
+    <TextView
+        android:layout_marginStart="-10dp"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Chọn dịch vụ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_border" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/thick_border"
+        android:maxLines="1"
+        android:inputType="text"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"
         android:name="com.home.helpmarket.Services.ServiceTypeFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:listitem="@layout/fragment_select_type_item" />
+        tools:listitem="@layout/fragment_select_type_item"
+        android:background="@drawable/border" />
 
     <ImageButton
         android:layout_gravity="center_horizontal"

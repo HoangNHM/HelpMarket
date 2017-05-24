@@ -26,15 +26,14 @@ public class DummyContent {
     private static final int COUNT = 4;
 
     static {
-        addItem(new DummyItem("0", "Lau nhà", null));
-        addItem(new DummyItem("1", "Dọn nhà", null));
-        addItem(new DummyItem("2", "Vệ sinh nhà cửa", null));
-        addItem(new DummyItem("3", "...", null));
+        addItem(new DummyItem(false, "Lau nhà", null));
+        addItem(new DummyItem(false, "Dọn nhà", null));
+        addItem(new DummyItem(false, "Vệ sinh nhà cửa", null));
+        addItem(new DummyItem(false, "...", null));
     }
 
     private static void addItem(DummyItem item) {
         ITEMS.add(item);
-        ITEM_MAP.put(item.id, item);
     }
 
     private static String makeDetails(int position) {
@@ -50,12 +49,12 @@ public class DummyContent {
      * A dummy item representing a piece of content.
      */
     public static class DummyItem {
-        public final String id;
+        public boolean isSelected;
         public final String content;
         public final String details;
 
-        public DummyItem(String id, String content, String details) {
-            this.id = id;
+        public DummyItem(boolean isSelected, String content, String details) {
+            this.isSelected = isSelected;
             this.content = content;
             this.details = details;
         }

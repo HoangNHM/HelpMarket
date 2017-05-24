@@ -4,6 +4,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.home.helpmarket.R;
@@ -19,11 +21,11 @@ import java.util.List;
  */
 public class ServiceTypeRecyclerViewAdapter extends RecyclerView.Adapter<ServiceTypeRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyItem> mValues;
+    List<DummyItem> mValues;
     private final OnListFragmentInteractionListener mListener;
 
     public ServiceTypeRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
-        mValues = items;
+        mValues = FilterServiceActivity.queryList;
         mListener = listener;
     }
 
@@ -35,9 +37,9 @@ public class ServiceTypeRecyclerViewAdapter extends RecyclerView.Adapter<Service
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
+        holder.mCheckBox.setChecked(mValues.get(position).isSelected);
         holder.mContentView.setText(mValues.get(position).content);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +48,8 @@ public class ServiceTypeRecyclerViewAdapter extends RecyclerView.Adapter<Service
                 if (null != mListener) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentInteraction(holder.mItem);
+                    holder.mCheckBox.setChecked(!holder.mItem.isSelected);
+                    mListener.onListFragmentInteraction(holder.mItem, position);
                 }
             }
         });
@@ -59,14 +62,14 @@ public class ServiceTypeRecyclerViewAdapter extends RecyclerView.Adapter<Service
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
-        public final TextView mIdView;
+        public final CheckBox mCheckBox;
         public final TextView mContentView;
         public DummyItem mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.id);
+            mCheckBox = (CheckBox) view.findViewById(R.id.checkbox);
             mContentView = (TextView) view.findViewById(R.id.content);
         }
 

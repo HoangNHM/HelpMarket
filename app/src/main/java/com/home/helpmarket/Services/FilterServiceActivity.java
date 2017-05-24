@@ -3,24 +3,28 @@ package com.home.helpmarket.Services;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.home.helpmarket.Constant;
-import com.home.helpmarket.Enroll.EnrollActivity;
 import com.home.helpmarket.Maps.MapsActivity;
 import com.home.helpmarket.R;
 import com.home.helpmarket.Services.dummy.DummyContent;
 
-public class FilterServiceActivity extends AppCompatActivity implements SelectTypeFragment.OnListFragmentInteractionListener, SelectRangeFragment.OnFragmentInteractionListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class FilterServiceActivity extends AppCompatActivity
+        implements SelectTypeFragment.OnListFragmentInteractionListener,
+        SelectRangeFragment.OnFragmentInteractionListener,
+        SelectTypeFragment.OnEditListener {
 
     private int mMan = 0;
     private int mDistance = 0;
+    public static List<DummyContent.DummyItem> queryList = DummyContent.ITEMS;
+
     /**
      * The {@link FrameLayout} that will host the section contents.
      */
@@ -37,17 +41,18 @@ public class FilterServiceActivity extends AppCompatActivity implements SelectTy
         mFrameLayout = (FrameLayout) findViewById(R.id.container);
 
         fm.beginTransaction()
-        .add(R.id.container, SelectTypeFragment.newInstance(0))
+        .add(R.id.container, SelectTypeFragment.newInstance())
         .commit();
     }
 
     /**
      * 1st page callback, click on list item
      * @param item
+     * @param position
      */
     @Override
-    public void onListFragmentInteraction(DummyContent.DummyItem item) {
-
+    public void onListFragmentInteraction(DummyContent.DummyItem item, int position) {
+        item.isSelected = !item.isSelected;
     }
 
     /**
@@ -100,48 +105,18 @@ public class FilterServiceActivity extends AppCompatActivity implements SelectTy
         startActivity(intent);
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-        public SectionsPagerAdapter(FragmentManager fm) {
-            super(fm);
+    @Override
+    public void onEditListener(String query) {
+        if (query.isEmpty()) {
+            queryList = DummyContent.ITEMS;
+            return;
         }
-
-        @Override
-        public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return SelectTypeFragment(1st page) or SelectRangeFragment(2nd page)
-            Fragment fragment;
-            switch (position) {
-                case 0:
-                    fragment = SelectTypeFragment.newInstance(0);
-                    return fragment;
-                case 1:
-                    fragment = SelectRangeFragment.newInstance(null, null);
-                    return fragment;
-                default:
-                    return null;
+        queryList = new ArrayList<>();
+        for (DummyContent.DummyItem item :
+                DummyContent.ITEMS) {
+            if (item.content.toLowerCase().contains(query.toLowerCase())) {
+                queryList.add(item);
             }
-        }
-
-        @Override
-        public int getCount() {
-            // Show 2 total pages.
-            return 2;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "SECTION 1";
-                case 1:
-                    return "SECTION 2";
-            }
-            return null;
         }
     }
 }

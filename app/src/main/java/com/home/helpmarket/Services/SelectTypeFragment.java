@@ -6,13 +6,22 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.home.helpmarket.R;
 import com.home.helpmarket.Services.dummy.DummyContent;
 import com.home.helpmarket.Services.dummy.DummyContent.DummyItem;
+
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
@@ -25,8 +34,9 @@ public class SelectTypeFragment extends Fragment {
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
-    private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
+    private OnEditListener mEditListener;
+
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -37,11 +47,11 @@ public class SelectTypeFragment extends Fragment {
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
-    public static SelectTypeFragment newInstance(int columnCount) {
+    public static SelectTypeFragment newInstance() {
         SelectTypeFragment fragment = new SelectTypeFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -50,7 +60,7 @@ public class SelectTypeFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
+            DummyContent dummyContent = getArguments().getParcelable(ARG_COLUMN_COUNT);
         }
     }
 
@@ -61,16 +71,43 @@ public class SelectTypeFragment extends Fragment {
         View view = overview.findViewById(R.id.list);
 
         // Set the adapter
+        final ServiceTypeRecyclerViewAdapter adapter = new ServiceTypeRecyclerViewAdapter(FilterServiceActivity.queryList, mListener);
+        final RecyclerView recyclerView;
         if (view instanceof RecyclerView) {
             Context context = view.getContext();
-            RecyclerView recyclerView = (RecyclerView) view;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
-            }
-            recyclerView.setAdapter(new ServiceTypeRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView = (RecyclerView) view;
+            recyclerView.setLayoutManager(new LinearLayoutManager(context));
+            recyclerView.setAdapter(adapter);
         }
+
+        EditText search = (EditText) overview.findViewById(R.id.etSearch);
+        /*search.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                mEditListener.onEditListener(v.getText().toString());
+                adapter.mValues = FilterServiceActivity.queryList;
+                adapter.notifyDataSetChanged();
+                return true;
+            }
+        });*/
+        search.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mEditListener.onEditListener(s.toString());
+                adapter.mValues = FilterServiceActivity.queryList;
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
         return overview;
     }
 
@@ -80,6 +117,7 @@ public class SelectTypeFragment extends Fragment {
         super.onAttach(context);
         if (context instanceof OnListFragmentInteractionListener) {
             mListener = (OnListFragmentInteractionListener) context;
+            mEditListener = (OnEditListener) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnListFragmentInteractionListener");
@@ -90,6 +128,7 @@ public class SelectTypeFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+        mEditListener = null;
     }
 
     /**
@@ -104,6 +143,10 @@ public class SelectTypeFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+        void onListFragmentInteraction(DummyItem item, int position);
+    }
+
+    public interface OnEditListener {
+        void onEditListener(String query);
     }
 }
