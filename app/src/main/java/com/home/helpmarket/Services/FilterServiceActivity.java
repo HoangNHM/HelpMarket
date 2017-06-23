@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.home.helpmarket.Constant;
+import com.home.helpmarket.Maps.MapLocationActivity;
 import com.home.helpmarket.Maps.MapsActivity;
 import com.home.helpmarket.R;
 import com.home.helpmarket.Services.dummy.DummyContent;
@@ -97,7 +98,7 @@ public class FilterServiceActivity extends AppCompatActivity
         } else if (mDistance == 0) {
             mDistance = 2;
         }
-        Intent intent = new Intent(FilterServiceActivity.this, MapsActivity.class);
+        Intent intent = new Intent(FilterServiceActivity.this, MapLocationActivity.class);
         Bundle args = new Bundle();
         args.putInt(Constant.ARG_DISTANCE, mDistance);
         args.putInt(Constant.ARG_MAN, mMan);
